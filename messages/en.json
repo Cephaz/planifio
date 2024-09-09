@@ -1,0 +1,11 @@
+{
+  "Home": {
+    "Header": {
+      "Features": "Features",
+      "Pricing": "Pricing",
+      "About": "About",
+      "Login": "Login",
+      "Register": "Register"
+    }
+  }
+}
