@@ -8,5 +8,14 @@
   },
   "NotFound": {
     "title": "Cette page est introuvable"
+  },
+  "Hero": {
+    "scheduling": "La planification",
+    "made": "simplifiée",
+    "forPeopleLikeYou": "pour des gens comme vous",
+    "planifioIsManagementTool": "Planifio est un outil de gestion de projet.",
+    "ItIsDesignedToBeSimple": "Il est conçu pour être simple et facile à utiliser.",
+    "getStartedForFree": "Commencer gratuitement",
+    "watchVideo": "Regarder la vidéo"
   }
 }

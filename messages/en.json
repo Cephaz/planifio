@@ -8,5 +8,14 @@
   },
   "NotFound": {
     "title": "This page could not be found"
+  },
+  "Hero": {
+    "scheduling": "Scheduling",
+    "made": "made simple",
+    "forPeopleLikeYou": "for people like you",
+    "planifioIsManagementTool": "Planifio is a project management tool.",
+    "ItIsDesignedToBeSimple": "It is designed to be simple and easy to use.",
+    "getStartedForFree": "Get started for free",
+    "watchVideo": "Watch video"
   }
 }
