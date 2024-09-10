@@ -1,9 +1,9 @@
-import Link from "next/link";
-import LocalSwitcher from "../switcher";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import LocalSwitcher from "../LocalSwitcher";
 
 export default function Header() {
-  const t = useTranslations("Home");
+  const t = useTranslations("Header");
 
   return (
     <header className="flex gap-4 justify-between py-4 text-gray-600">
@@ -12,19 +12,19 @@ export default function Header() {
           Planifio
         </Link>
         <nav className="flex gap-4">
-          <Link href={"/features"}>{t("Header.Features")}</Link>
-          <Link href={"/about"}>{t("Header.About")}</Link>
-          <Link href={"/pricing"}>{t("Header.Pricing")}</Link>
+          <Link href={"/features"}>{t("features")}</Link>
+          <Link href={"/about"}>{t("about")}</Link>
+          <Link href={"/pricing"}>{t("pricing")}</Link>
         </nav>
       </div>
       <nav className="flex items-center gap-4">
         <LocalSwitcher />
-        <Link href={"/login"}>{t("Header.Login")}</Link>
+        <Link href={"/login"}>{t("login")}</Link>
         <Link
           href={"/signup"}
           className="bg-green-600 text-white py-2 px-4 rounded-full"
         >
-          {t("Header.Register")}
+          {t("register")}
         </Link>
       </nav>
     </header>

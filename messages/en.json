@@ -1,11 +1,12 @@
 {
-  "Home": {
-    "Header": {
-      "Features": "Features",
-      "Pricing": "Pricing",
-      "About": "About",
-      "Login": "Login",
-      "Register": "Register"
-    }
+  "Header": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About",
+    "login": "Login",
+    "register": "Register"
+  },
+  "NotFound": {
+    "title": "This page could not be found"
   }
 }

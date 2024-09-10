@@ -1,11 +1,12 @@
 {
-  "Home": {
-    "Header": {
-      "Features": "Fonctionnalités",
-      "Pricing": "Prix",
-      "About": "À propos",
-      "Login": "Connexion",
-      "Register": "Inscription"
-    }
+  "Header": {
+    "features": "Fonctionnalités",
+    "pricing": "Prix",
+    "about": "À propos",
+    "login": "Connexion",
+    "register": "Inscription"
+  },
+  "NotFound": {
+    "title": "Cette page est introuvable"
   }
 }
