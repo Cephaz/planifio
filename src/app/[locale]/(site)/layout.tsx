@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "../globals.css";
+import "../../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Header from "../components/Header";
 
 const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
+  src: "../../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
-  weight: "100 900",
+  weight: "300 400 700",
 });
 const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff",
+  src: "../../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
-  weight: "100 900",
+  weight: "300 400 700",
 });
 
 export const metadata: Metadata = {
@@ -34,9 +35,10 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased container mx-auto px-4`}
       >
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>

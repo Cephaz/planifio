@@ -1,9 +1,12 @@
+'use server';
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
-import LocalSwitcher from "../LocalSwitcher";
+import { getTranslations } from "next-intl/server";
+import { session } from "@/libs/sessions";
+import RightNav from "./RightNav";
 
-export default function Header() {
-  const t = useTranslations("Header");
+export default async function Header() {
+  const email = await session().get('email');
+  const t = await getTranslations("Header");
 
   return (
     <header className="flex gap-4 justify-between py-4 text-gray-600">
@@ -17,16 +20,7 @@ export default function Header() {
           <Link href={"/pricing"}>{t("pricing")}</Link>
         </nav>
       </div>
-      <nav className="flex items-center gap-4">
-        <LocalSwitcher />
-        <Link href={"/login"}>{t("login")}</Link>
-        <Link
-          href={"/signup"}
-          className="bg-green-600 text-white py-2 px-4 rounded-full"
-        >
-          {t("register")}
-        </Link>
-      </nav>
+      <RightNav email={email} />
     </header>
   );
 }

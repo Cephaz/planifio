@@ -2,9 +2,13 @@
   "Header": {
     "features": "Features",
     "pricing": "Pricing",
-    "about": "About",
+    "about": "About"
+  },
+  "RightNav": {
     "login": "Login",
-    "register": "Register"
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "getStarted": "Get started"
   },
   "NotFound": {
     "title": "This page could not be found"

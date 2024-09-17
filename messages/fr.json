@@ -2,9 +2,13 @@
   "Header": {
     "features": "Fonctionnalités",
     "pricing": "Prix",
-    "about": "À propos",
+    "about": "À propos"
+  },
+  "RightNav": {
     "login": "Connexion",
-    "register": "Inscription"
+    "logout": "Déconnexion",
+    "dashboard": "Tableau de bord",
+    "getStarted": "Commencer"
   },
   "NotFound": {
     "title": "Cette page est introuvable"
